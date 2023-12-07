@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar class="ColorR">
+    <ion-title>REGISTRARSE</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre/Apellido" placeholder="Juanito Pérez"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Edad" type="number" placeholder="23"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Contraseña" type="password" value="password"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Correo" type="email" placeholder="fab.riquelmep@duocuc.cl"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Número de teléfono" type="tel" placeholder="9-52590010"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+
+  <ion-button color="dark" [routerLink]="['/login']" shape="rectangle"> Registrarse</ion-button>
+</ion-content>
