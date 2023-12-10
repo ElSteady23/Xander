@@ -50,10 +50,15 @@ const routes: Routes = [
     loadChildren: () => import('./pages/toyota/toyota.module').then( m => m.ToyotaPageModule)
   },
   {
-    path: '**',
+    path: 'listado',
+    loadChildren: () => import('./pages/listado/listado.module').then( m => m.ListadoPageModule)
+  },
+  {
+    path: '**', 
     redirectTo: 'not-fund',
     pathMatch: 'full'
   },
+ 
   
     
 

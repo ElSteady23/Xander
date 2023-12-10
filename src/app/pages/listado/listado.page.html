@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="tol">
+    <ion-title>
+      Lista de Vehículos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  
+    <ion-card class="contenedor" *ngFor="let vehicle of vehicles.results">
+      <ion-card-header>
+        <ion-card-subtitle>Vehículo: {{ vehicle.make }}</ion-card-subtitle>
+        <ion-card-title>{{ vehicle.make }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Modelo: {{ vehicle.basemodel }}
+        </p>
+        <p>
+          Año: {{ vehicle.createdon }}
+        </p>
+      </ion-card-content>
+      
+      
+    </ion-card>
+  
+
+<!-- 
+  <ul *ngFor="let vehicle of vehicles.results">
+    <li>{{ vehicle.make }}</li>
+    <li>{{ vehicle.basemodel }}</li>
+    <li>{{ vehicle.fueltype1 }}</li>
+    <li>{{ vehicle.model }}</li>
+  </ul> -->
