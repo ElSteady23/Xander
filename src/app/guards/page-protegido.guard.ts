@@ -1,3 +1,4 @@
+//Aquí usamos el import para importar funciones exportadas de otros modulos
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';

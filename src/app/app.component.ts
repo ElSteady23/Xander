@@ -24,6 +24,8 @@ export class AppComponent {
     pagination: { clickable: true },
     scrollbar: {draggable: true},
   };
+
+  //Aquí estabamos creando un carrusel el cual contenía imagenes y esas imagenes nos iban a redireccionar a google, youtube, facebook, instagram. El cual nunca se utilizo
   slides = [
     {
       link: 'https://www.google.com',

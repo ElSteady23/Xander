@@ -1,3 +1,4 @@
+<!--Se crea un encabezado y se le da la clase "ColorR" para darle color al toolbar, también se crea un botón de retorno-->
 <ion-header>
   <ion-toolbar class="ColorR">
     <ion-title>REGISTRARSE</ion-title>
@@ -7,8 +8,8 @@
   </ion-toolbar>
 </ion-header>
 
+<!--Se crea un contenedor y listas para almacenar los datos de usuarios-->
 <ion-content>
-  
   <ion-list>
     <ion-list>
       <ion-item>
@@ -33,5 +34,6 @@
     </ion-list>
   </ion-list>
 
+<!--Se crea un botón para interactuar con el enrutador, en este caso redirecciona al login-->
   <ion-button color="dark" [routerLink]="['/login']" shape="rectangle"> Registrarse</ion-button>
 </ion-content>

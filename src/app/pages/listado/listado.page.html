@@ -1,3 +1,4 @@
+<!--Se crea un encabezado el cual contiene una clase "tol" para darle color al toolbar-->
 <ion-header>
   <ion-toolbar class="tol">
     <ion-title>
@@ -7,7 +8,7 @@
 </ion-header>
 
 
-  
+  <!--Se crea una tarjeta con la clase "contenedor" para darle color y utilizamos el *ngFor para iterar con el array-->
     <ion-card class="contenedor" *ngFor="let vehicle of vehicles.results">
       <ion-card-header>
         <ion-card-subtitle>Vehículo: {{ vehicle.make }}</ion-card-subtitle>

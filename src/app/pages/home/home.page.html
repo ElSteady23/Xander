@@ -1,3 +1,4 @@
+<!--Se crea un encabezado con una clase "HomeT" para darle color al toolbar y un botón de retorno-->
 <ion-header>
   <ion-toolbar class="HomeT">
     <ion-title>XANDER AUTOPARTS</ion-title>
@@ -7,14 +8,17 @@
   </ion-toolbar>
 </ion-header>
 
+<!--Se crea un contenedor para dar el contenido de la página con una clase "backg" para darle color a la página-->
 <ion-content class="backg"> 
 
+<!--Se crea una tarjeta 4 tarjetas dentro-->
   <ion-card>
     <ion-card-header>
       <ion-card-title>Marcas Frecuentes</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
     </ion-card-header>
 
+        <!--Se crea un routerLink para interactuar con el enrutador y redireccionar a Volkswagen-->
     <ion-card-content>
       <ion-list>
         <ion-item>
@@ -24,6 +28,7 @@
           <ion-label [routerLink]="['/volkswagen']">Volkswagen</ion-label>
         </ion-item> 
   
+        <!--Se crea un routerLink para interactuar con el enrutador y redireccionar a Mitsubishi-->
         <ion-item>
           <ion-thumbnail slot="start">
             <img alt="Mitsubishi Evo" src="assets/imagenes/Evo.jpg" />
@@ -31,6 +36,7 @@
           <ion-label [routerLink]="['/mitsubishi']">Mitsubishi </ion-label>
         </ion-item>
   
+        <!--Se crea un routerLink para interactuar con el enrutador y redireccionar a Nissan-->
         <ion-item>
           <ion-thumbnail slot="start">
             <img alt="Skyline r35" src="assets/imagenes/r35azul.jpg" />
@@ -38,6 +44,7 @@
           <ion-label [routerLink]="['/nissan']">Nissan</ion-label>
         </ion-item>
   
+        <!--Se crea un routerLink para interactuar con el enrutador y redireccionar a Toyota-->
         <ion-item lines="none">
           <ion-thumbnail slot="start">
             <img alt="Toyota supra mk5" src="assets/imagenes/mk5azul.png" />
@@ -49,7 +56,7 @@
   </ion-card>
 
   
-
+<!--Se crea una tarjeta con información sobre nuestra página-->
   <ion-card>
     <ion-card-header>
       <ion-card-title>Nosotros</ion-card-title>
@@ -61,5 +68,6 @@
     </ion-card-content>
   </ion-card>
 
+<!--Se crea un botón con un "href" simulando la función del routerLink, este redirecciona a listado el cual muestra nuestra api consumida-->
   <ion-button color="dark" href="/listado" shape="full">Autos</ion-button>
 </ion-content>

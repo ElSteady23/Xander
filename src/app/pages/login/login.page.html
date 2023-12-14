@@ -1,24 +1,32 @@
+<!--Se crea un encabezado el cual utiliza la clase "InicioS" para darle los colores al toolbar-->
 <ion-header>
-  <ion-toolbar class="InicioS">
+  <ion-toolbar class="InicioS"> 
     <ion-title>INICIO DE SESIÓN</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="FondoInicioS">
+<!--Se da inicio al contenido de la página y se le da la clase "FondoInicioS para darle color"-->
+<ion-content class="FondoInicioS"> 
   <ion-img src="assets/imagenes/SupraMK5Inicio.webp"></ion-img>
 
+<!--Se crea un  label con una entrada como nombre de usuario-->  
   <ion-item>
     <ion-label position="floating"> Nombre Usuario</ion-label>
     <ion-input [(ngModel)]="nombreusuario" placeholder="Ingrese nombre de usuario"></ion-input>
   </ion-item>
 
+<!--Se crea un label con una entrada como contraseña-->
   <ion-item>
     <ion-label position="floating"> Contraseña</ion-label>
     <ion-input [(ngModel)]="password" type="password" placeholder="Ingrese contraseña"></ion-input>
   </ion-item>
    
+<!--Se crea un botón para interactuar con el enrutador en este caso redirecciona al home-->  
   <ion-button  color="dark" [routerLink]="['/home']" shape="rectangle"> Iniciar sesión</ion-button>
+
+<!--Se crea un botón para interactuar con el enrutador en este caso redirreciona a registrarse-->  
   <ion-button  color="dark" [routerLink]="['/registrarse']" shape="rectangle"> Registrarse</ion-button>
 
   <ion-img src="assets/imagenes/r35.jpg"></ion-img>
 </ion-content>
+

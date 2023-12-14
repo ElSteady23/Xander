@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { PageProtegidoGuard } from './guards/page-protegido.guard';
 
+//Este es el enrutador el cual nos redirecciona a donde queramos
 const routes: Routes = [
   {
+    //Aquí dejamos sin nada el path para que nos redireccione al login si no tenemos ninguna "entrada"
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
@@ -15,6 +17,7 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule),
+    //Aquí le conectamos el guardian
     canActivate: [PageProtegidoGuard]
   },
   {
@@ -54,6 +57,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/listado/listado.module').then( m => m.ListadoPageModule)
   },
   {
+    //dejamos el not-fund para el final ya que así le indicamos que cualquier otra página que no esté descrita nos redireccione al not-fund
     path: '**', 
     redirectTo: 'not-fund',
     pathMatch: 'full'

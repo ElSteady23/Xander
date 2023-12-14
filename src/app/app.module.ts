@@ -1,3 +1,4 @@
+//Utilizamos los import para importar funciones que han sido exportadas de un modulo externo
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
